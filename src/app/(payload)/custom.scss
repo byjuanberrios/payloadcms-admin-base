@@ -1,0 +1,124 @@
+.group-field--top-level > .group-field__wrap > .group-field__header header h3 label {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .group-field--top-level > .group-field__wrap > .group-field__header header h3 label {
+    font-size: 13px;
+    line-height: 1.25;
+  }
+}
+
+// Nav
+.nav__wrap {
+  gap: 1rem;
+}
+
+// Two columns layout
+.two-columns-layout .render-fields {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.two-columns-layout .render-fields .rich-text-lexical,
+.two-columns-layout .render-fields .array-field {
+  min-width: 50%;
+}
+
+.two-columns-layout .render-fields .rich-text-lexical .editor .ContentEditable__root {
+  padding-right: 2rem;
+}
+
+// Three columns layout
+.three-columns-layout .render-fields {
+  flex-wrap: nowrap;
+}
+
+.three-columns-layout .render-fields .rich-text-lexical,
+.three-columns-layout .render-fields .array-field {
+  min-width: 33.33%;
+}
+
+.three-columns-layout .render-fields .rich-text-lexical .editor .ContentEditable__root {
+  padding-right: 2rem;
+}
+
+.lexical-block-highlighted-section .collapsible__content {
+  background-color: rgba(205 205 205 / 0.1);
+}
+
+// Three columns layout: group field
+.three-columns-layout .group-field__wrap .render-fields {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.three-columns-layout .group-field__wrap .render-fields .group-field {
+  min-width: 33.33%;
+}
+
+.three-columns-layout .group-field__wrap .render-fields .group-field__wrap .render-fields {
+  flex-wrap: wrap;
+  padding-right: 1rem;
+}
+
+.three-columns-layout
+  .group-field__wrap
+  .render-fields
+  .group-field__wrap
+  .render-fields
+  .field-type {
+  width: 100%;
+}
+
+// Custom preprend text field
+// .field-custom-preppend > div {
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+//   &:before {
+//     content: 'https://domain.com/';
+//   }
+// }
+
+.field-facebook-prepend > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &:before {
+    content: 'https://www.facebook.com/';
+  }
+}
+
+.field-instagram-prepend > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &:before {
+    content: 'https://instagram.com/';
+  }
+}
+
+.field-linkedin-prepend > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &:before {
+    content: 'https://www.linkedin.com/company/';
+  }
+}
+
+// Group fields Personalization
+.group-field__title label {
+  font-weight: 500;
+}
+
+.sizesWrapper,
+.litersWrapper,
+.diametersWrapper {
+  padding-bottom: 12px;
+}
