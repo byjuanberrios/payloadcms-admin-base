@@ -21,31 +21,25 @@ cp .env.example .env
 
 Asegúrate de completar los valores necesarios, especialmente `MONGODB_URI` para la base de datos.
 
-### 3. Instala las dependencias
+## ⚙️ Variables de entorno requeridas
 
-```bash
-pnpm install
-```
+Para que la aplicación funcione correctamente, debes definir las siguientes variables en tu archivo `.env`:
 
-### 4. Inicia el servidor de desarrollo
+- `MONGODB_URI`: URL de conexión a tu base de datos MongoDB (obligatoria).
+- `PAYLOAD_SECRET`: Clave secreta para Payload (obligatoria).
+- `NEXT_PUBLIC_SERVER_URL`: URL pública de tu servidor (opcional, pero recomendada para despliegues).
 
-```bash
-pnpm dev
-```
+### Variables SMTP (opcional)
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para acceder a la app y al panel de administración.
+Si deseas habilitar el envío de correos electrónicos (por ejemplo, para recuperación de contraseña), debes descomentar la configuración de nodemailer en el proyecto y definir las siguientes variables:
 
-## 🐳 Uso con Docker (opcional)
+- `SMTP_HOST`: Host del servidor SMTP.
+- `SMTP_PORT`: Puerto del servidor SMTP.
+- `SMTP_USER`: Usuario de tu cuenta SMTP.
+- `SMTP_PASS`: Contraseña de tu cuenta SMTP.
+- `SMTP_FROM`: Correo electrónico del remitente.
 
-1. Asegúrate de tener Docker instalado.
-2. Ajusta `MONGODB_URI` en tu `.env` a `mongodb://127.0.0.1/<nombre_db>`.
-3. Ejecuta:
-
-```bash
-docker-compose up
-```
-
-Esto levantará MongoDB y la app en contenedores.
+> ⚠️ Las variables SMTP solo son necesarias si descomentas y usas la configuración de nodemailer en el proyecto.
 
 ## 📁 Estructura del Proyecto
 
@@ -62,4 +56,6 @@ Esto levantará MongoDB y la app en contenedores.
 
 ## ❓ Soporte
 
-Payload CMS tiene una gran comunidad dispuesta a ayudarte en [Discord](https://discord.com/invite/payload). También puedes abrir una discusión en [GitHub](https://github.com/payloadcms/payload/discussions).
+Payload CMS tiene una gran comunidad dispuesta a ayudarte en [Discord](https://discord.com/invite/
+payload). También puedes abrir una discusión en [GitHub](https://github.com/payloadcms/payload/
+discussions).
