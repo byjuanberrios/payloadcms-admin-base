@@ -1,7 +1,5 @@
 # Payload CMS Starter Template
 
-¡Bienvenido al Starter Template de Payload CMS!
-
 Este proyecto proporciona una base mínima y flexible para comenzar rápidamente con Payload CMS, permitiéndote personalizar y escalar tu aplicación según tus necesidades.
 
 ## 🚀 Inicio Rápido
@@ -64,6 +62,4 @@ Esto levantará MongoDB y la app en contenedores.
 
 ## ❓ Soporte
 
-¿Dudas o problemas? Únete a la comunidad en [Discord](https://discord.com/invite/payload) o abre una discusión en [GitHub](https://github.com/payloadcms/payload/discussions).
-
-¡Feliz desarrollo!
+Payload CMS tiene una gran comunidad dispuesta a ayudarte en [Discord](https://discord.com/invite/payload). También puedes abrir una discusión en [GitHub](https://github.com/payloadcms/payload/discussions).
